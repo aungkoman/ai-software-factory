@@ -15,6 +15,6 @@ jobs:
           persist-credentials: false
       - name: Detect committed credentials
         run: |
-          if git grep -nE '-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----' -- ':!*.md'; then
+          if git grep -nE -- '-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----' ':!*.md'; then
             echo 'Potential private key committed'; exit 1
           fi
