@@ -1,0 +1,11 @@
+name: Agent task
+description: Tracked development task
+title: '[Task] '
+labels: ['enhancement']
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and acceptance criteria
+    validations:
+      required: true

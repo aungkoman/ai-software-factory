@@ -1,0 +1,2 @@
+# Types
+Shared workflow types.
